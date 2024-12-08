@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio shopping web</title>
+    <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    
+</head>
+<body>
+
+    <!-- Header with Cart Icon -->
+    <header>
+        <h2>Audio Shop</h2>
+        <span class="material-icons cart-icon">shopping_cart</span>
+        <span class="cart-count">0</span>
+    </header>
+
+<section class="home" id="home">
+           <div class="slider">
+
+            <!-- Slide 1 -->
+
+            <div class="slide active">
+
+                <div class="text-section">
+                    <img src="/images/robin-logo-black-en-p-800.png" alt="Honkai Star Rail Logo" class="logo">
+                    <p class="typewriter">Nice to meet you, I'm Robin!</p>
+                    
+                    <p class="p1">Dear Trailblazers, get ready to immerse yourself in dynamic melodies with Robin!</p>
+                </div>
+                <div class="image-section">
+                    <img src="/images/robin.jpg" alt="Robin Image 1">
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="text-section">
+                    <img src="/images/truthear_logo.svg" alt="Honkai Star Rail Logo" class="logo_truthear">
+                    <p class="typewriter">Truthear Nova</p>
+                    <p class="p1">Delivering a clean, natural sound with smooth treble and punchy bass.</p>
+                </div>
+                <div class="image-section">
+                    <img src="/images/Nova-Slider.jpg" alt="Robin Image 2">
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="text-section">
+                    <img src="/images/t-logo.png" alt="Logo" class="logo_tangzu">
+                    <p class="typewriter">Tangzu Yu Xuan Ji</p>
+                    <p class="p1">A topology dynamic driver, which enhances audio precision by incorporating a unique, patterned diaphragm.</p>
+                </div>
+                <div class="image-section">
+                    <img src="/images/xuanji.jpg" alt="Robin Image 2">
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            
+            <div class="slide">
+                <div class="text-section">
+                    <img src="/images/moondrop_logo.png" alt="Logo" class="logo">
+                    <p class="typewriter">Moondrop MIAD01</p>
+                    <p class="p1">Fully Balanced Hi-fi Audio Player, 5G Smartphone for Daily Use.</p>
+                </div>
+                <div class="image-section">
+                    <img src="/images/MIAD01.jpg" alt="Robin Image 2">
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            
+            <div class="slide">
+                <div class="text-section">
+                    <img src="/images/moondrop_logo.png" alt="Honkai Star Rail Logo" class="logo">
+                    <p class="typewriter">Golden Age</p>
+                    <p class="p1">13mm Super-Linear Full-Frequency Planar Multi- Protocol ANC TWS</p>
+                </div>
+                <div class="image-section">
+                    <img src="/images/golden-age.jpg" alt="Img">
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <!-- Repeat similar structure for 3 more slides -->
+        </div>
+
+        <!-- Dot navigation -->
+        <div class="dot-container">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+            <span class="dot" onclick="goToSlide(4)"></span>
+        </div>
+
+  
+  
+</section>
+
+
+
+<section class="truthear" id="truthear">
+    <img src="/images/truthear_logo.svg" class="Product-logo">
+    <!-- Product Grid -->
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>Red</h3>
+</a>
+            <a class="descrip">IEMs</a>
+            <img src="/images/red.png" alt="png">
+            <div class="price">$54.99</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>Blue</h3>
+</a>
+            <p class="descrip">IEMs</p>
+            <img src="/images/blue.png" alt="png">
+            <div class="price">$49.99</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>Gate</h3>
+</a>
+            <p class="descrip">IEMs</p>
+            <img src="/images/gate.png" alt="png">
+            <div class="price">$18.99</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+       
+       
+       <!-- Product 4 -->
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>Hola</h3>
+</a>
+            <p class="descrip">IEMs</p>
+            <img src="/images/hola.png" alt="png">
+            <div class="price">$18.99</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+        
+       <!-- Product 5 -->       
+       <div class="product">
+          <a href="#" class="item-name">
+  <h3>Hexa</h3>
+</a>
+         <p class="descrip">IEMs</p>
+          <img src="/images/hexa.png" alt="png">
+          <div class="price">$79.99</div>
+           <div class="added-message">
+              <span class="material-icons">check_circle</span>
+         </div>
+         <button class="add-to-cart">
+           <span class="material-icons">add_shopping_cart</span>
+         </button>
+        </div>
+    </div>
+    
+<!-- Cart Sidebar -->
+  
+
+
+
+    <div class="cart-sidebar">
+        <span class="material-icons close-btn">close</span>
+        <h3>Shopping Cart</h3>
+        <div class="cart-items"></div>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</section>
+
+
+<section class="moondrop" id="moondrop">
+    <img src="/images/moondrop_logo.png" class="Product-logo">
+    <!-- Product Grid -->
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>Kadenz</h3>
+</a>
+            <p class="descrip">IEMs</p>
+            <img src="/images/kadenz.png" alt="png">
+            <div class="price">$189.99</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>Kato</h3>
+</a>
+            <p class="descrip">IEMs</p>
+            <img src="/images/kato.png" alt="png">
+            <div class="price">$189.99</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>May</h3>
+</a>
+            <p class="descrip">IEMs</p>
+            <img src="/images/may.png" alt="png">
+            <div class="price">$64.99</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+       
+       
+       <!-- Product 4 -->
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>Solis 2</h3>
+</a>
+            <p class="descrip">IEMs</p>
+            <img src="/images/solis-2.png" alt="png">
+            <div class="price">$2699.00</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+        
+       <!-- Product 5 -->       
+       <div class="product">
+          <a href="#" class="item-name">
+  <h3>Starfield</h3>
+</a>
+         <p class="descrip">IEMs</p>
+          <img src="/images/starfield.png" alt="png">
+          <div class="price">$109.99</div>
+           <div class="added-message">
+              <span class="material-icons">check_circle</span>
+         </div>
+         <button class="add-to-cart">
+           <span class="material-icons">add_shopping_cart</span>
+         </button>
+        </div>
+        
+        <!-- Product 6 -->
+       <div class="product">
+          <a href="#" class="item-name">
+  <h3>Ultra Sonic</h3>
+</a>
+         <p class="descrip">TWS</p>
+          <img src="/images/ultra-sonic.png" alt="png">
+          <div class="price">$74.99</div>
+           <div class="added-message">
+              <span class="material-icons">check_circle</span>
+         </div>
+         <button class="add-to-cart">
+           <span class="material-icons">add_shopping_cart</span>
+         </button>
+        </div>
+        
+        <!-- Product 7 -->
+       <div class="product">
+          <a href="#" class="item-name">
+  <h3>Space Travel</h3>
+</a>
+         <p class="descrip">TWS</p>
+          <img src="/images/s-travel.png" alt="png">
+          <div class="price">$24.99</div>
+           <div class="added-message">
+              <span class="material-icons">check_circle</span>
+         </div>
+         <button class="add-to-cart">
+           <span class="material-icons">add_shopping_cart</span>
+         </button>
+        </div>
+    </div>
+    </section>
+    
+    <section class="simgot" id="simgot">
+    <img src="/images/simgotlogo.png" class="Product-logo">
+    <!-- Product Grid -->
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>FLD100</h3>
+</a>
+            <p class="descrip">TWS</p>
+            <img src="/images/fld100.png" alt="png">
+            <div class="price">$15.29</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+
+        <!-- Product 2 -->
+       <div class="product">
+          <a href="#" class="item-name">
+  <h3>EW300</h3>
+</a>
+         <p class="descrip">IEMs</p>
+          <img src="/images/ew300.png" alt="png">
+          <div class="price">$69.99</div>
+           <div class="added-message">
+              <span class="material-icons">check_circle</span>
+         </div>
+         <button class="add-to-cart">
+           <span class="material-icons">add_shopping_cart</span>
+         </button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>EW200</h3>
+</a>
+            <p class="descrip">IEMs</p>
+            <img src="/images/ew200.png" alt="png">
+            <div class="price">$39.99</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+       
+       
+       <!-- Product 4 -->
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>EW100</h3>
+</a>
+            <p class="descrip">IEMs</p>
+            <img src="/images/ew100.png" alt="png">
+            <div class="price">$19.99</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+        
+       <!-- Product 5 -->       
+       <div class="product">
+          <a href="#" class="item-name">
+  <h3>EA500</h3>
+</a>
+         <p class="descrip">IEMs</p>
+          <img src="/images/ea500.png" alt="png">
+          <div class="price">$79.00</div>
+           <div class="added-message">
+              <span class="material-icons">check_circle</span>
+         </div>
+         <button class="add-to-cart">
+           <span class="material-icons">add_shopping_cart</span>
+         </button>
+        </div>
+        
+       <!-- Product 6 -->       
+        <div class="product">
+          <a href="#" class="item-name">
+  <h3>EA1000</h3>
+</a>
+            <p class="descrip">IEMs</p>
+            <img src="/images/ea1000.png" alt="png">
+            <div class="price">$219.99</div>
+            <div class="added-message">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <button class="add-to-cart">
+                <span class="material-icons">add_shopping_cart</span>
+            </button>
+        </div>
+        
+       <!-- Product 7 -->       
+       <div class="product">
+          <a href="#" class="item-name">
+  <h3>EA2000</h3>
+</a>
+         <p class="descrip">IEMs</p>
+          <img src="/images/ea2000.png" alt="png">
+          <div class="price">$319.99</div>
+           <div class="added-message">
+              <span class="material-icons">check_circle</span>
+         </div>
+         <button class="add-to-cart">
+           <span class="material-icons">add_shopping_cart</span>
+         </button>
+        </div>
+    </div>
+    </section>
+    
+   <footer>
+    <div class="footerContainer">
+     <div class="socialIcons">
+        <a href="https://www.facebook.com/NotEnuma?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+       <a href="https://www.instagram.com/_smn.tg/?igsh=azJ2aG40aWFmbTk4"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtu.be/xvFZjo5PgG0?si=8lQQlJWG3VAK8oYh"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul><li><a href="#">Home</a></li>
+              <li><a href="#truthear">Truthear</a></li>
+              <li><a href="#moondrop">Moondrop</a></li>
+             <li><a href="#simgot">Simgot</a></li>
+              <li><a href="/product_variations.html">Members</a></li>
+           </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+     <p class="footer-text">This site is under development</p>
+    </div>
+</footer>
+
+
+    
+    
+    
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
